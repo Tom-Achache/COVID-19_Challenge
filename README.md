@@ -10,6 +10,10 @@ The aim of the competition was to diagnose patients with COVID-19, viral pneumon
 
 The training data includes 1127 chest X-rays drawn from several different sources (of varying size and quality) and a set of multiclass labels indicating whether each patient was healthy or diagnosed with bacterial pneumonia, viral pneumonia, or COVID-19. The test data includes 484 images without labels.
 
+## Model
+
+The model I used in this project are Neural Networks, build with [Keras](https://keras.io). I tried a hand-crafted one in a first time, and then used Transfer Learning on Resnet50V2.
+
 ## Setup
 
 This project was made on Google Colab, to speed up the training of the NNs, but can be run without it. In that case, please ignore the first section of the notebook.
@@ -26,11 +30,13 @@ The notebook to be run is `C19_Challenge.ipynb`. You can simply run it cell by c
 
 ![train_plot](Figures/training_plot.png)
 
+(the vertical black line corresponds to the time I unfroze the lower weights during Transfer Learning)
+
 #### Metrics
 
-![class_report](Figures/Metrics/class_report.pdf)
+![class_report](Figures/Metrics/class_report.png)
 
-![confusion_mat](Figures/Metrics/confusion_mat.pdf)
+![confusion_mat](Figures/Metrics/confusion_mat.png)
 
 ### On the test set
 
