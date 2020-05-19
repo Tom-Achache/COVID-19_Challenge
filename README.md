@@ -24,7 +24,7 @@ The notebook to be run is `C19_Challenge.ipynb`. You can simply run it cell by c
 
 #### Training
 
-![train_plot](Figures/train_plot.png)
+![train_plot](Figures/training_plot.png)
 
 #### Metrics
 
